@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>travelplane</title>
+    <style>
+
+        body{
+            margin : 0;
+        }
+
+        #wrap{
+            margin : 0px 0px;
+            height : 100%;
+            width : 100%;
+            position : relative;
+        }
+
+        #header{
+            margin: 0px 0px;
+            width: 100%;
+            height: 350px;
+            display: block;
+            background-image: url('travelplane.jpeg');
+            background-size: 100% 350px;
+        }
+
+        #container{
+            margin : 0 auto;
+            width: 60%;
+            height : 2400px;
+        }
+
+        .logo img{
+            width : 150px;
+            float : left;
+        }
+
+        .sidebar{
+            position: fixed;
+            right : 0;
+            transition: 1s;
+            width : 0;
+            height: 100%;
+            overflow: hidden;
+            background: black;
+            transition-duration: 1s;
+            top : 0px;
+            z-index:4;
+        }
+      
+        .menuBtn{
+            position : absolute;
+            right : 0;
+        }
+
+        .menuBtn >img{
+            width : 100px;
+        }
+
+        .menu:hover > .sidebar{
+            height : 100%;
+            width : 300px;
+            right : 100;
+            left : 100;
+            top: 0;
+        }
+
+        .sidebar > img{
+            width : 330px;
+           margin : 10px 10px;
+
+            
+        }
+
+        .sidebar_list li{
+            list-style-type: none;
+            margin: 70px 0;
+            font-size: 30px;
+            text-align : center;
+        }
+
+        .sidebar_list li a{
+            text-decoration-line: none;
+            color : white;
+        }
+
+        .sidebar_list li a:hover{
+            text-decoration-line: none;
+            color : greenyellow;
+        }
+
+        .welcometext{
+            margin : auto; 
+            width : 60%;
+            height : 100%;
+        }
+
+        .welcometext > h1{  
+            font-size : 100px;
+        }
+
+
+        #footer {
+            position:absolute;
+            top: 200%;
+            width:100%;
+            height:150px;   
+            background:black;
+            color : white;
+            display: block;
+        }
+
+        #footer img{
+            float : left;
+            width : 230px;
+            height: auto;
+        }
+
+        .yangyang{
+            font-size : 20px;
+        }
+
+        .newyork{
+            font-size : 20px;
+        }
+
+        table{
+            border-color : black;
+        }
+   
+     </style>
+
+</head>
+<body>
+    <div id = "wrap">
+        <div id = "header">
+            <div class = "logo">
+                <a href = "main.html"> <img src="LEEEE_F04.png" alt="My Image"></a>
+            </div>
+
+            <div class = "menu">
+                <div class = "menuBtn"><img src = "menulogo_black.png" alt = "logo"></div>
+
+                <div class = "sidebar">
+                    <img src = "LEEEE_F04.png" alt = "sidebarlogo">
+
+                    <ul class = "sidebar_list">
+                        <li>
+                            <a href="aboutme.html"><b>자기소개</b></a>
+                        </li>
+                        <li>
+                            <a href="DepartmentI.html"><b>학과소개</b></a>
+                        </li>
+                        <li>
+                            <a href="hobby.html"><b>취미 활동</b></a>
+                        </li>
+                        <li>
+                            <a href="travelmemories.html"><b>여행 추억속으로</b></a>
+                        </li>
+                        <li>
+                            <a href="travelplane.html"><b>여행 계획</b></span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class = "welcometext">
+                <br><br><br><h1>여행계획</h1>
+            </div>
+
+        </div>
+
+        <div id = "container">
+            <div class = "yangyang">
+                <h1>'양양'으로 '혼자 배낭 여행' 가기!</h1>
+                <h2>'양양'으로 여행 가고 싶은 이유</h2>
+                <p>저는 군 복무 근무지는 양양이었습니다. 군 생활을 한 지역이기 때문에 지겨워 다시 가고 싶지 않은 지역이라고 생각도 많이 했습니다.
+                     2022년 4월에 행군을 해 보았는데 7번 국도를 따라서 행군했는데 무작정 바다를 보며 걸으니, 육체적으로는 힘들었더라도 행군이 끝나고
+                      다시 생각해 보니 좋았던 경험이라고 생각이 들었습니다. 그리고 가족들, 친구들과 다녔던 여행 말고는 혼자 여행을 간 경험이 없기에 더 특별한 여행을
+                       계획하기로 결심했습니다.
+                </p>
+                <h2>준비물</h2>
+                <input type = "checkbox" name ="yangyangtem" value = "세면도구">세면도구<br>
+                <input type = "checkbox" name ="yangyangtem" value = "모자">모자<br>
+                <input type = "checkbox" name ="yangyangtem" value = "가벼운 옷">가벼운 옷<br>
+                <input type = "checkbox" name ="yangyangtem" value = "가볍게 바를 로션">가볍게 바를 로션<br>
+                <input type = "checkbox" name ="yangyangtem" value = "썬크림">썬크림<br>
+                <input type = "checkbox" name ="yangyangtem" value = "충전기">휴대폰 충전기<br>
+                <input type = "checkbox" name ="yangyangtem" value = "보조배터리">보조 배터리<br>
+                <input type = "checkbox" name ="yangyangtem" value = "지갑">지갑(버스카드)<br>
+                <input type = "checkbox" name ="yangyangtem" value = "속옷">속옷<br>
+                <h2>상세 계획표</h2>
+
+                <table border = "1">
+                    <tr>
+                        <th>일차</th>
+                        <th>순서</th>
+                        <th>이동경로</th>
+                        <th>이동수단</th>
+                        <th>소요시간</th>
+                        <th>상세설명</th>
+                    </tr>
+                    <tr>
+                        <th rowspan = "11">1일차</th>
+                        <td>1</td>
+                        <td>서울 고속버스 터미널 -> 양양 종합 여객 터미널</td>
+                        <td>버스</td>
+                        <td>2시간</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>양양 종합 여객 터미널 -> 양양기사님 식당</td>
+                        <td>택시</td>
+                        <td>2분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>양양기사님 식당</td>
+                        <td></td>
+                        <td>30분</td>
+                        <td>아침식사</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>양양기사님 식당 -> 낙산 해수욕장</td>
+                        <td>도보</td>
+                        <td>1시간</td>
+                        <td>남대천길 따라 걷기</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>낙산해수욕장</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>낙산항 둘러보기</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>낙산해수욕장 -> 솜다리 수제버거</td>
+                        <td>도보</td>
+                        <td>32분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>솜다리 수제버거</td>
+                        <td></td>
+                        <td>30분</td>
+                        <td>점심식사</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>솜다리 수제버거 -> 물치항 숙소</td>
+                        <td>도보</td>
+                        <td>1시간</td>
+                        <td>숙소 입실</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>횟집</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>물회와 회 포장후 숙소에서 저녁식사</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>물치해수욕장 산책</td>
+                        <td>도보</td>
+                        <td>1시간</td>
+                        <td>산책</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>숙소</td>
+                        <td></td>
+                        <td></td>
+                        <td>취침</td>
+                    </tr>
+                    <tr>
+                        <th rowspan = "11">2일차</th>
+                        <td>1</td>
+                        <td>물치항 숙소 -> 우미정 갈비탕</td>
+                        <td>도보</td>
+                        <td>5분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>우미정 갈비탕</td>
+                        <td></td>
+                        <td>30분</td>
+                        <td>아침식사</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>우미정 갈비탕 -> 외치항</td>
+                        <td>도보</td>
+                        <td>45분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>외치항</td>
+                        <td></td>
+                        <td>30분</td>
+                        <td>휴식</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>외치항 -> 간이해수욕장</td>
+                        <td>도보</td>
+                        <td>1시간</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>간이해수욕장 -> 단천식당</td>
+                        <td>도보</td>
+                        <td>10분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>단천식당</td>
+                        <td></td>
+                        <td>30분</td>
+                        <td>점심식사</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>단천식당 -> 등대 해수욕장</td>
+                        <td>도보</td>
+                        <td>33분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>등대해수욕장 근처 할리스 카페</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>휴식</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>등대해수욕장 -> 속초고속버스터미널</td>
+                        <td>택시</td>
+                        <td>10분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>속초고속버스터미널 -> 서울고속버스터미널</td>
+                        <td>버스</td>
+                        <td>2시간 30분</td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class = "newyork">
+                <p><br><br></p>
+                <h1>버킷리스트 '뉴욕'으로 여행 가기!</h1>
+                <h2>'뉴욕'으로 여행 가고 싶은 이유</h2>
+                <p>저의 오랜 버킷리스트는 뉴욕으로 여행가기입니다. 제가 좋아하는 영화는 ‘나 홀로 집에 2’인데 이때 처음으로
+                     우리나라와는 사뭇 다른 뉴욕의 배경을 보게 되었고 멋지다는 생각을 가지게 되었습니다. 어릴 때부터 ‘꼭 한번은 가보고
+                      싶다.’라는 생각을 가지게 되었습니다. 이것이 제가 ‘뉴욕’으로 여행을 가고 싶은 단순한 이유입니다.
+                </p>
+                <h2>준비물</h2>
+                <input type = "checkbox" name ="newyorktem" value = "세면도구">세면도구<br>
+                <input type = "checkbox" name ="newyorktem" value = "여권">여권<br>
+                <input type = "checkbox" name ="newyorktem" value = "어댑터">220v 어댑터<br>
+                <input type = "checkbox" name ="newyorktem" value = "여벌의 옷">여벌의 옷<br>
+                <input type = "checkbox" name ="newyorktem" value = "충분한 달러">충분한 달러<br>
+                <input type = "checkbox" name ="newyorktem" value = "지갑">지갑<br>
+                <input type = "checkbox" name ="newyorktem" value = "모자">모자<br>
+                <input type = "checkbox" name ="newyorktem" value = "속옷">속옷<br>
+                <input type = "checkbox" name ="newyorktem" value = "크로스백">크로스백<br>
+                <input type = "checkbox" name ="newyorktem" value = "스킨로션">스킨로션<br>
+                <input type = "checkbox" name ="newyorktem" value = "충전기">휴대폰 충전기<br>
+                <input type = "checkbox" name ="newyorktem" value = "보조배터리">보조 배터리<br>
+                <input type = "checkbox" name ="newyorktem" value = "필름 카메라">필름 카메라<br>
+                <h2>상세 계획표</h2>
+
+                <table border = "1">
+                    <tr>
+                        <th>일차</th>
+                        <th>순서</th>
+                        <th>이동경로</th>
+                        <th>이동수단</th>
+                        <th>소요시간</th>
+                        <th>상세설명</th>
+                    </tr>
+                    <tr>
+                        <th rowspan = "8">1일차</th>
+                        <td>1</td>
+                        <td>존 F. 케네디 국제공항 -> Luke's Lobster Upper West Side</td>
+                        <td>우버</td>
+                        <td>30분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Luke's Lobster Upper West Side</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Luke's Lobster Upper West Side -> 센트럴 파크</td>
+                        <td>도보</td>
+                        <td>10분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>센트럴 파크</td>
+                        <td></td>
+                        <td>3시간</td>
+                        <td>산책, 구경</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>센트럴 파크 -> 아메리칸 뮤지엄 오브 네츄럴 히스토리</td>
+                        <td>도보</td>
+                        <td>5분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>아메리칸 뮤지엄 오브 네츄럴 히스토리</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>구경</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>아메리칸 뮤지엄 오브 네츄럴 히스토리 -> The Gin Mill</td>
+                        <td>도보</td>
+                        <td>10분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>The Gin Mill</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <th rowspan = "13">2일차</th>
+                        <td>1</td>
+                        <td>Sarabeth's</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sarabeth's -> 트럼프 타워</td>
+                        <td>지하철</td>
+                        <td>20분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>트럼프 타워</td>
+                        <td></td>
+                        <td>30분</td>
+                        <td>트럼프 타워 외 길거리 구경</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>트럼프 타워 -> 뉴욕 현대 미술관</td>
+                        <td>도보</td>
+                        <td>10분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>뉴욕 현대 미술관</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>구경</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>뉴욕 현대 미술관 -> St. 패트릭스 대성당</td>
+                        <td>도보</td>
+                        <td>10분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>St. 패트릭스 대성당</td>
+                        <td></td>
+                        <td>30분</td>
+                        <td>구경</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>St. 패트릭스 대성당 -> 라디오 시티 뮤직 홀</td>
+                        <td>도보</td>
+                        <td>15분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>라디오 시티 뮤직 홀</td>
+                        <td></td>
+                        <td>2시간</td>
+                        <td>입장, 구경</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>라디오 시티 뮤직 홀 -> 달라스 바베큐 타임스 스퀘어</td>
+                        <td>도보</td>
+                        <td>15분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>달라스 바베큐 타임스 스퀘어</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>달라스 바베큐 타임스 스퀘어 -> 탑 오브 더 락</td>
+                        <td>도보</td>
+                        <td>15분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>탑 오브 더 락</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>구경</td>
+                    </tr>
+                    <tr>
+                        <th rowspan = "11">3일차</th>
+                        <td>1</td>
+                        <td>Famous Famiglia Pizza</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Famous Famiglia Pizza -> 타임즈 스퀘어</td>
+                        <td>도보</td>
+                        <td>10분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>타임즈 스퀘어</td>
+                        <td></td>
+                        <td>2시간</td>
+                        <td>구경</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>타임즈 스퀘어 -> 엠파이어 스테이트 빌딩</td>
+                        <td>도보 </td>
+                        <td>20분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>엠파이어 스테이트 빌딩</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>구경</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>엠파이어 스테이트 빌딩 -> 첼시 마켓</td>
+                        <td>지하철</td>
+                        <td>20분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>첼시 마켓</td>
+                        <td></td>
+                        <td>2시간</td>
+                        <td>구경, 식사 </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>첼시 마켓 -> 플랫 아이언 빌딩</td>
+                        <td>지하철</td>
+                        <td>20분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>플랫 아이언 빌딩</td>
+                        <td></td>
+                        <td>30분</td>
+                        <td>구경</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>플랫 아이언 빌딩 -> 230 Fifth Rooftop Bar</td>
+                        <td>도보</td>
+                        <td>10분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>230 Fifth Rooftop Bar</td>
+                        <td></td>
+                        <td>2시간</td>
+                        <td>구경, 식사</td>
+                    </tr>
+
+
+                    <tr>
+                        <th rowspan = "11">4일차</th>
+                        <td>1</td>
+                        <td>할랄 가이즈</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>할랄 가이즈 -> 소호 이동</td>
+                        <td>지하철</td>
+                        <td>20분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>소호 길거리</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>구경</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>소호 슈프림 매장</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>쇼핑</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>슈프림 매장 -> 롬바르디스 피자</td>
+                        <td>도보</td>
+                        <td>10분</td>
+                        <td>구경</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>롬바르디스 피자</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>롬바르디스 피자 -> 차이나 타운</td>
+                        <td>도보</td>
+                        <td>15분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>차이나 타운</td>
+                        <td></td>
+                        <td>30분</td>
+                        <td>구경</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Nom Wah Tea Parlor</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Nom Wah Tea Parlor -> 윈 월드 전망대</td>
+                        <td>지하철</td>
+                        <td>30분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>윈 월드 전망대</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>관람</td>
+                    </tr>
+                    <tr>
+                        <th rowspan = "10">5일차</th>
+                        <td>1</td>
+                        <td>Kuu Ramen</td>
+                        <td></td>
+                        <td>30분</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kuu Ramen -> 9/11 Memorial & Museum</td>
+                        <td>도보</td>
+                        <td>5분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>9/11 Memorial & Museu</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>추모, 관람</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>9/11 Memorial & Museu -> 배터리 공원</td>
+                        <td>지하철</td>
+                        <td>12분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>배터리공원 시티크루즈 탑승 -> 자유의 여신상 관람</td>
+                        <td>크루즈</td>
+                        <td>2시간</td>
+                        <td>관람</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>배터리 공원</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>산책</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>배터리 공원 -> Fraunces Tavern</td>
+                        <td>도보</td>
+                        <td>20분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Fraunces Tavern</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>월 스트리트</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>길거리 산책</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Jeremy's Ale House</td>
+                        <td></td>
+                        <td>2시간</td>
+                        <td>가벼운 음주</td>
+                    </tr>
+                    <tr>
+                        <th rowspan = "12">6일차</th>
+                        <td>1</td>
+                        <td>SUteiShi</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SUteiShi -> 브루클린 브릿지 뷰</td>
+                        <td>도보</td>
+                        <td>20분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>브루클린 브릿지 뷰 -> 브루클린 브리지 파크 피어 1</td>
+                        <td>도보</td>
+                        <td>1시간</td>
+                        <td>브루클린 브릿지 걸어서 건너가기</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>브루클린 브리지 파크 피어 1</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>산책</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>브루클린 브리지 파크 피어 1 -> 덤보</td>
+                        <td>도보</td>
+                        <td>10분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>덤보</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>산책 (Manhattan Bridge View 관람)</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Bread & Spread</td>
+                        <td></td>
+                        <td>30분</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Bread & Spread -> Brooklyn Flea</td>
+                        <td>도보</td>
+                        <td>10분</td>
+                        <td>쇼핑</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Brooklyn Flea -> 욘 스트리트 공원</td>
+                        <td>도보</td>
+                        <td>10분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>욘 스트리트 공원</td>
+                        <td></td>
+                        <td>2시간</td>
+                        <td>구경 , 산책</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>욘 스트리트 공원 -> 68 jay Street Bar</td>
+                        <td>도보</td>
+                        <td>10분</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>68 jay Street Bar</td>
+                        <td></td>
+                        <td>2시간</td>
+                        <td>가벼운 음주</td>
+                    </tr>
+                    <tr>
+                        <th rowspan = "2">7일차</th> 
+                        <td>1</td>
+                        <td>Front Street Pizza</td>
+                        <td></td>
+                        <td>1시간</td>
+                        <td>식사</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Front Street Pizza -> 존 F. 케네디 국제공항</td>
+                        <td>우버</td>
+                        <td>30분</td>
+                        <td></td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+        </div>
+
+        <div id = "footer">
+            <img src ="LEEEE_F04.png">
+            <h1><br>소프트웨어공학과 20200669 이승희</h1>
+        </div>
+
+    </div>
+
+    
+</body>
+
+
+</html>

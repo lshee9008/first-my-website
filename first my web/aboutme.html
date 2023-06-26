@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>aboutme</title>
+    <style>
+       
+        body{
+            margin : 0;
+        }
+
+        #wrap{
+            margin : 0px 0px;
+            height : 100%;
+            width : 100%;
+            position : relative;
+        }
+
+        #header{
+            margin: 0px 0px;
+            width: 100%;
+            height: 350px;
+            display: block;
+            background-image: url('aboutme.JPG');
+            background-size: 100% 350px;            
+        }
+
+        #container{
+            margin : 0 auto;
+            width: 100%;
+            height : 2800px;
+            background-color : rgb(60, 60, 60);
+        }
+
+        .logo img{
+            width : 150px;
+            float : left;
+        }
+
+        .sidebar{
+            position: fixed;
+            right : 0;
+            transition: 1s;
+            width : 0;
+            height: 100%;
+            overflow: hidden;
+            background: black;
+            transition-duration: 1s;
+            top : 0px;
+            z-index:4;
+        }
+      
+        .menuBtn{
+            position : absolute;
+            right : 0;
+        }
+
+        .menuBtn >img{
+            width : 100px;
+        }
+
+        .menu:hover > .sidebar{
+            height : 100%;
+            width : 300px;
+            right : 100;
+            left : 100;
+            top: 0;
+        }
+
+        .sidebar > img{
+            width : 330px;
+           margin : 10px 10px;
+
+            
+        }
+
+        .sidebar_list li{
+            list-style-type: none;
+            margin: 70px 0;
+            font-size: 30px;
+            text-align : center;
+        }
+
+        .sidebar_list li a{
+            text-decoration-line: none;
+            color : white;
+            
+
+        }
+
+        .sidebar_list li a:hover{
+            text-decoration-line: none;
+            color : greenyellow;
+
+        }
+
+        .welcometext{
+            margin : auto; 
+            width : 60%;
+            height : 100%;
+        }
+
+        .welcometext > h1{  
+            font-size : 100px;    
+        }
+
+        #footer {
+            position:absolute;
+            
+            top : 100%;
+            width:100%;
+            height:150px;   
+            background:black;
+            color : white;
+        }
+
+        #footer img{
+            float : left;
+            width : 230px;
+            height: auto;
+        }
+
+        .me{
+            margin : 0 auto;
+            width : 100%;
+            height : 280px;
+            background-color: white;
+        }
+
+        .me img{   
+
+            float : left;
+            left : 50%; 
+            margin : 0 auto;
+            width : 200px;
+            height : auto;
+            border-radius: 100%;
+            
+            border-color: black;
+            
+        }
+
+        
+
+        .about{
+            background-color: rgb(60, 60, 60);
+            position : block;
+            
+            color : white;
+            font-size : 30px;
+            margin : 0 auto;
+            width : 60%;
+            
+        }
+        .meme{
+            margin : 0 auto;
+        
+            width: 700px;
+            font-size: 20px;
+        }
+
+        .meme > a{
+            text-decoration-line: none;
+            color : blue;
+            font-size : 23px;
+        }
+
+        .meme > a:nth-last-child(1) {
+            float : right;
+        }
+
+        .meme > a:nth-last-child(2) {
+            float : right;
+        }
+
+     </style>
+
+</head>
+<body>
+    <div id = "wrap">
+        <div id = "header">
+            <div class = "logo">
+                <a href = "main.html"> <img src="LEEEE_F02.png" alt="My Image"></a>
+            </div>
+
+            <div class = "menu">
+                <div class = "menuBtn"><img src = "menulogo_black.png" alt = "logo"></div>
+
+                <div class = "sidebar">
+                    <img src = "LEEEE_F04.png" alt = "sidebarlogo">
+
+                    <ul class = "sidebar_list">
+                        <li>
+                            <a href="aboutme.html"><b>자기소개</b></a>
+                        </li>
+                        <li>
+                            <a href="DepartmentI.html"><b>학과소개</b></a>
+                        </li>
+                        <li>
+                            <a href="hobby.html"><b>취미 활동</b></a>
+                        </li>
+                        <li>
+                            <a href="travelmemories.html"><b>여행 추억속으로</b></a>
+                        </li>
+                        <li>
+                            <a href="travelplane.html"><b>여행 계획</b></span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class = "welcometext">
+                <br><br><br><h1>자기소개</h1>
+            </div>
+
+        </div>
+
+        <div id = "container">
+            <div class = "me">
+                
+                <div class = "meme">
+                    <img src = "lee.jpeg">
+                    <h1>이승희</h1>
+                    <h2>2001.06.13</h2>
+                    <h2>9008lucky@naver.com</h2>
+                    <a href= "#dream">#꿈</a>
+                    <a href= "#pre">#꿈에 관련하여 준비</a>
+                    <a href= "#iden">#나의 성격</a>
+                    <a href= "#motto">#좌우명</a>
+                    <a href= "#value">#가치관</a>
+                    <br>
+                    <a href= "#song">#좋아하는 음악</a>
+                    <a href= "#food">#좋아하는 음식</a>
+
+                </div>
+                
+            </div>
+            
+            <div class = "about">
+                <h1 id = "dream">꿈</h1>
+                <p>저의 꿈은 ‘공상과학 영화를 현실로 만들 개발자’가 되는 것입니다.
+                    저는 중학교 3학년에 컴퓨터를 너무 사랑한 나머지 IT 학과가 있는 고등학교로 진학하였습니다. 고등학교에서의 여러 가지의 프로그래밍 언어들과 기술들을 접하며, 더 넓은 지식을 얻고 전문가가 되고 싶다고 생각하여 소프트웨어학과로 진학하였습니다. 현재의 꿈은 일상생활에서 획기적으로 편리하게 사용할 만한 앱과 인공지능을 접목하여 실용적인 앱 개발하는 꿈을 지니고 있습니다. 저 자신을 평가하기에 아직은 꿈에 가까워지기에 멀었지만, 이 꿈을 실현하기 위하여 열심히 학습 중입니다.</p>
+                <h1 id = "pre">꿈에 관련하여 준비</h1>
+                <p>c, c++, html5, css3, flutter, Algorithm, 자료구조, 정보처리기능사, 컴퓨터활용능력 2급 등을 습득하고 취득하였으며 이에 더 불어 꿈을 위해 준비하고 습득하고 싶은 기술들이 많습니다. 꿈에 맞게 인공지능, 빅데이터, 서버 등에 대하여 자세히 학습할 계획 중에 있습니다.</p>
+                <h1 id = "iden">나의 성격</h1>
+                <p>저의 성격은 이루고 싶은 어느 목표가 생기면 이루기 위해 끝까지 노력한다는 점입니다. 다른 사람들이 저에게 ‘고집이 세다.’, ‘독한 기질이 있다.’라고 말합니다. 이 성격은 고등학교 2학년 초부터 생겼습니다. 후회하는 것은 매우 우울한 행동이라는 것이라는 것을 알게 되어 후회 없도록 끝까지 최선을 다하여 이루겠다는 마음이 생겼습니다. 또한 제가 생각하는 저의 성격은 생각이 너무 많고 신경 쓰이는 것들이 많다는 것입니다. 이에 있어서 장점으로는 여러 가지 경우의 수를 고려하니 실패와 안 좋은 상황에 대하여 대비를 할 수 있다는 점입니다. 단점으로는 상황마다 쉬운 선택을 하지 못하여 스트레스를 받는 점입니다. 이러한 점에 대하여 조금은 쉽게 상황들을 선택하고 넘어가는 성격을 개선하고 있습니다.</p>
+                <h1 id = "motto">좌우명</h1>
+                <p>원하는 목표가 있다면 열심히 하지 말자, 죽어라 하자</p>
+                <h1 id = "value">나의 가치관</h1>
+                <Ui>
+                    <li>예의범절을 잘 지키자</li>
+                    <li>도덕에 어긋나는 행동을 하지 말자</li>
+                    <li>모든 것은 업보 그대로 돌려받는다.</li>
+                    <li>최고의 성공 길은 성실이다.</li>
+                    <li>바보처럼 살지 말자</li>
+                </Ui>
+                <h1 id = "song">좋아하는 음악</h1>
+                <p>허회경 - 그렇게 살아가는 거</p>
+                <h1 id = "food">좋아하는 음식</h1>
+                <p>대창</p>
+
+            </div>
+            
+        </div>
+  
+        <div id = "footer">
+            <img src ="LEEEE_F04.png">
+            <h1><br>소프트웨어공학과 20200669 이승희</h1>
+        </div>
+
+    </div>
+
+    
+</body>
+
+
+</html>

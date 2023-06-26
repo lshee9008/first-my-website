@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>department</title>
+    <style>
+       
+        body{
+            margin : 0;
+            
+        }
+
+        #wrap{
+            margin : 0px 0px;
+            height : 100%;
+            width : 100%;
+            position : relative;
+            background-color: rgb(0, 0, 35);
+        }
+
+        #header{
+            margin: 0px 0px;
+            width: 100%;
+            height: 350px;
+            display: block;
+            background-image: url('software.jpg');
+            background-size: 100% 350px;
+        }
+
+        #container{
+            margin : 0 auto;
+            width: 60%;
+            height : 2400px;
+        }
+
+        .logo img{
+            width : 150px;
+            float : left;
+        }
+
+        .sidebar{
+            position: fixed;
+            right : 0;
+            transition: 1s;
+            width : 0;
+            height: 100%;
+            overflow: hidden;
+            background: black;
+            transition-duration: 1s;
+            top : 0px;
+            z-index:4;
+        }
+      
+        .menuBtn{
+            position : absolute;
+            right : 0;
+        }
+
+        .menuBtn >img{
+            width : 100px;
+        }
+
+        .menu:hover > .sidebar{
+            height : 100%;
+            width : 300px;
+            right : 100;
+            left : 100;
+            top: 0;
+        }
+
+        .sidebar > img{
+            width : 330px;
+           margin : 10px 10px;            
+        }
+
+        .sidebar_list li{
+            list-style-type: none;
+            margin: 70px 0;
+            font-size: 30px;
+            text-align : center;
+        }
+
+        .sidebar_list li a{
+            text-decoration-line: none;
+            color : white;
+        }
+
+        .sidebar_list li a:hover{
+            text-decoration-line: none;
+            color : greenyellow;
+        }
+
+        .welcometext{
+            margin : auto; 
+            width : 60%;
+            height : 100%;
+        }
+
+        .welcometext > h1{                                              
+            font-size : 100px;
+        }
+
+
+        #footer {
+            position:absolute;
+            top : 100%;
+            width:100%;
+            height:150px;   
+            background:black;
+            color : white;
+        }
+
+        #footer img{
+            float : left;
+            width : 230px;
+            height: auto;
+        }
+
+        .intro{
+            color : white;
+            font-size : 25px;
+        }
+        
+        .intro1{
+            color : rgb(109, 176, 152);
+        }
+
+        .intro2{
+            color : rgb(20, 255, 0);
+        }
+
+        .intro3{
+            color : rgb(209, 255, 24);
+        }
+
+        .intro4{
+            color : rgb(159, 57, 195);
+        }
+
+        .intro5{
+            color : rgb(255, 110, 29);
+        }
+
+        .intro6{
+            color : rgb(0, 240, 255);
+        }
+
+     </style>
+
+</head>
+<body>
+    <div id = "wrap">
+        <div id = "header">
+            <div class = "logo">
+                <a href = "main.html"> <img src="LEEEE_F02.png" alt="My Image"></a>
+            </div>
+
+            <div class = "menu">
+                <div class = "menuBtn"><img src = "menulogo_black.png" alt = "logo"></div>
+
+                <div class = "sidebar">
+                    <img src = "LEEEE_F04.png" alt = "sidebarlogo">
+
+                    <ul class = "sidebar_list">
+                        <li>
+                            <a href="aboutme.html"><b>자기소개</b></a>
+                        </li>
+                        <li>
+                            <a href="DepartmentI.html"><b>학과소개</b></a>
+                        </li>
+                        <li>
+                            <a href="hobby.html"><b>취미 활동</b></a>
+                        </li>
+                        <li>
+                            <a href="travelmemories.html"><b>여행 추억속으로</b></a>
+                        </li>
+                        <li>
+                            <a href="travelplane.html"><b>여행 계획</b></span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class = "welcometext">
+                <br><br><br><h1>학과소개</h1>
+            </div>
+
+        </div>
+
+        <div id = "container">
+            <div class = "intro">
+                <h1 class = "intro1">소프트웨어공학과를 소개합니다.</h1>
+                <p>소프트웨어공학과는 현재 4차산업 시대와 가장 밀접한 공학 기술을
+                     배우는 학과입니다. 현재 일상생활의 일부가 되어버린 스마트폰, 인터넷, 웹 페이지, 네트워크,
+                      인공지능과 빅데이터 등 이러한 현시대에 중요하게 자리 잡은 기술들을 배우는 학과입니다. </p>
+                <h1 class = "intro2">소프트웨어공학과의 장점</h1>
+                <ul>
+                    <li>실습을 통해 효율적이고 빠른 학습을 할 수 있습니다.</li>
+                    <li>넓은 개발자의 분야로 진출할 수 있습니다.</li>
+                    <li>사회 진출 시 넓은 취업 시장을 선택할 수 있습니다.</li>
+                    <li>자신의 기술과 획기적인 아이디어를 통해서 창조물을 설계하고 개발할 수 있습니다.</li>
+                    <li>사고력을 끝내 성취감을 이룰 수 있습니다.</li>
+                    <li>유망이 좋은 직업 분야로 진출할 수 있습니다.</li>
+                    <li>매번 새로운 기술을 배울 수 있습니다.</li>
+                </ul>
+                <h1 class = "intro3">소프트웨어공학과에 진학을 한 이유</h1>
+                <p>저는 고등학교 시절부터 개발자가 되는 것이 꿈이었기에 꿈을 실현하기에 도움이 될 수 있는 학과인 소프트웨어공학으로 진학하였습니다.
+                     소프트공학과에서 제가 원하는 학술들을 배우며 습득하여 전문가로 사회에 진출하는 것이 목표입니다. 진학 후 마음가짐으로는 전공의
+                      학술들도 열심히 학습하며 그 외의 시간에는 저의 꿈에 더 빨리 다가갈 수 있도록 속도를 내어 자기 계발에 열중하는 모습을 보이겠다는 마음가짐을 가졌습니다.
+                       무궁무진한 학습을 해야 하고 제가 선택한 전공 분야이기 때문에 지치는 날이 오더라도 즐기며 학습할 것입니다.</p>
+                <h1 class = "intro4">소프트웨어공학과 졸업 진출 분야</h1>
+                <ul>
+                    <li>인공지능 응용 개발자</li>
+                    <li>소프트웨어 엔지니어</li>
+                    <li>앱 개발자</li>
+                    <li>웹 개발자</li>
+                    <li>게임 개발자</li>
+                    <li>보안 전문가</li>
+                    <li>IT 분야의 개발자 등</li>
+                </ul>
+
+                <h1 class = "intro5">소프트웨어공학과에서 배우는 학술</h1>
+                <ul>
+                    <li>인공지능</li>
+                    <li>프로그래밍 언어</li>
+                    <li>웹 프로그래밍 언어</li>
+                    <li>컴퓨터 이론</li>
+                    <li>알고리즘</li>
+                    <li>데이터베이스</li>
+                    <li>사물인터넷</li>
+                    <li>빅데이터</li>
+                    <li>정보보호</li>
+                    <li>모바일 프로그래밍 등</li>
+                    
+                </ul>
+
+                <h1 class = "intro6">소프트웨어공학과와 적합한 사람</h1>
+                <ul>
+                    <li>끝없는 학습에 적응할 수 있는 사람</li>
+                    <li>혁신적인 창조물을 개발하고 싶은 사람</li>
+                    <li>일상생활에서의 불편한 점을 보완하고 싶은 사람</li>
+                </ul>
+
+            </div>
+            
+            
+        </div>
+            
+        <div id = "footer">
+            <img src ="LEEEE_F04.png">
+            <h1><br>소프트웨어공학과 20200669 이승희</h1>
+        </div>
+
+    </div>
+
+    
+</body>
+
+
+</html>

@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>travelmemories</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('.dmdimg1').hide();
+
+            $('#danimg1').click(function(){
+                $('.dmdimg1').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.dmdimg1').fadeOut(500);
+            });
+
+            $('.dmdimg2').hide();
+
+            $('#danimg2').click(function(){
+                $('.dmdimg2').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.dmdimg2').fadeOut(500);
+            });
+
+            $('.dmdimg3').hide();
+
+            $('#danimg3').click(function(){
+                $('.dmdimg3').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.dmdimg3').fadeOut(500);
+            });
+
+            $('.dmdimg4').hide();
+
+            $('#danimg4').click(function(){
+                $('.dmdimg4').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.dmdimg4').fadeOut(500);
+            });
+
+            $('.dmdimg5').hide();
+
+            $('#danimg5').click(function(){
+                $('.dmdimg5').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.dmdimg5').fadeOut(500);
+            });
+
+            $('.dmdimg6').hide();
+
+            $('#danimg6').click(function(){
+                $('.dmdimg6').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.dmdimg6').fadeOut(500);
+            });
+
+            $('.dmdimg7').hide();
+
+            $('#danimg7').click(function(){
+                $('.dmdimg7').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.dmdimg7').fadeOut(500);
+            });
+
+            $('.dmdimg8').hide();
+
+            $('#danimg8').click(function(){
+                $('.dmdimg8').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.dmdimg8').fadeOut(500);
+            });
+
+            $('.dmdimg9').hide();
+
+            $('#danimg9').click(function(){
+                $('.dmdimg9').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.dmdimg9').fadeOut(500);
+            });
+
+            $('.tmdimg1').hide();
+
+            $('#tongyoungimg1').click(function(){
+                $('.tmdimg1').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.tmdimg1').fadeOut(500);
+            });
+
+            $('.tmdimg2').hide();
+
+            $('#tongyoungimg2').click(function(){
+                $('.tmdimg2').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.tmdimg2').fadeOut(500);
+            });
+
+            $('.tmdimg3').hide();
+
+            $('#tongyoungimg3').click(function(){
+                $('.tmdimg3').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.tmdimg3').fadeOut(500);
+            });
+
+            $('.tmdimg4').hide();
+
+            $('#tongyoungimg4').click(function(){
+                $('.tmdimg4').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.tmdimg4').fadeOut(500);
+            });
+
+            $('.tmdimg5').hide();
+
+            $('#tongyoungimg5').click(function(){
+                $('.tmdimg5').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.tmdimg5').fadeOut(500);
+            });
+
+            $('.tmdimg6').hide();
+
+            $('#tongyoungimg6').click(function(){
+                $('.tmdimg6').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.tmdimg6').fadeOut(500);
+            });
+
+            $('.tmdimg7').hide();
+
+            $('#tongyoungimg7').click(function(){
+                $('.tmdimg7').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.tmdimg7').fadeOut(500);
+            });
+
+            $('.tmdimg8').hide();
+
+            $('#tongyoungimg8').click(function(){
+                $('.tmdimg8').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.tmdimg8').fadeOut(500);
+            });
+
+            $('.tmdimg9').hide();
+
+            $('#tongyoungimg9').click(function(){
+                $('.tmdimg9').fadeIn(500);
+            });
+
+            $('.btn-close').click(function(){
+                $('.tmdimg9').fadeOut(500);
+            });
+
+        });
+
+          </script>
+
+    <style>
+        body{
+            margin : 0;
+        }
+
+        #wrap{
+            margin : 0px 0px;
+            height : 3700px;
+            width : 100%;
+            position : relative;
+        }
+
+        #header{
+            margin: 0px 0px;
+            width: 100%;
+            height: 350px;
+            display: block;
+            background-image: url('travelmemories.jpeg');
+            background-size: 100% 350px;
+        }
+
+        #container{
+            margin : 0 auto;
+            width: 60%;
+            height : 2400px;
+            font-size : 17px;
+        }
+
+        .logo img{
+            width : 150px;
+            float : left;
+        }
+
+        .sidebar{
+            position: fixed;
+            right : 0;
+            transition: 1s;
+            width : 0;
+            height: 100%;
+            overflow: hidden;
+            background: black;
+            transition-duration: 1s;
+            top : 0px;
+            z-index:4;
+        }
+      
+        .menuBtn{
+            position : absolute;
+            right : 0;
+        }
+
+        .menuBtn >img{
+            width : 100px;
+        }
+
+        .menu:hover > .sidebar{
+            height : 100%;
+            width : 300px;
+            right : 100;
+            left : 100;
+            top: 0;
+        }
+
+        .sidebar > img{
+            width : 330px;
+           margin : 10px 10px;   
+        }
+
+        .sidebar_list li{
+            list-style-type: none;
+            margin: 70px 0;
+            font-size: 30px;
+            text-align : center;
+        }
+
+        .sidebar_list li a{
+            text-decoration-line: none;
+            color : white;
+        }
+
+        .sidebar_list li a:hover{
+            text-decoration-line: none;
+            color : greenyellow;
+        }
+
+        .welcometext{
+            margin : auto; 
+            width : 60%;
+            height : 100%;
+        }
+
+        .welcometext > h1{  
+            font-size : 100px;
+        }
+
+        #footer {
+            position:absolute;
+            top : 100%;
+            width:100%;
+            height:150px;   
+            background:black;
+            color : white;
+        }
+
+        #footer img{
+            float : left;
+            width : 230px;
+            height: auto;
+        }
+
+        .dabout{
+            width : 100%;
+        }
+
+        .danyang{
+            width: 100%;
+            
+        }
+
+        .dimg{
+            margin : 0 auto;
+        }
+
+        .danimg{
+            width : 33%;
+            display : inline-block;
+        }
+
+        .tongyoungimg > img {
+            width : 100%;
+            cursor : pointer;
+        }
+
+        .tabout{
+            width : 100%;
+        }
+
+        .tongyoung{
+            width: 100%;  
+        }
+
+        .tongimg{
+            margin : 0 auto;
+        }
+
+        .tongyoungimg{
+            width : 33%;
+            display : inline-block;
+        }
+
+        .danimg > img {
+            width : 100%;
+            cursor : pointer;
+        }
+
+        .modal-bg{
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            background-color: black;
+        }
+
+        .btn-close{
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 50px;
+            background-color : white;
+            cursor : pointer;
+        }
+
+        .tmdimg1{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .tmdimg1-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .tmdimg1-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+            margin : 0 auto;
+        }
+
+        .tmdimg1-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .tmdimg2{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .tmdimg2-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .tmdimg2-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+            margin : 0 auto;
+        }
+
+        .tmdimg2-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .tmdimg3{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .tmdimg3-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .tmdimg3-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+            margin : 0 auto;
+        }
+
+        .tmdimg3-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .tmdimg4{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .tmdimg4-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .tmdimg4-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+            margin : 0 auto;
+        }
+
+        .tmdimg4-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .tmdimg5{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .tmdimg5-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .tmdimg5-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+            margin : 0 auto;
+        }
+
+        .tmdimg5-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .tmdimg6{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .tmdimg6-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .tmdimg6-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+            margin : 0 auto;
+        }
+
+        .tmdimg6-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .tmdimg7{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .tmdimg7-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .tmdimg7-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+            margin : 0 auto;
+        }
+
+        .tmdimg7-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .tmdimg8{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        
+
+        .tmdimg8-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .tmdimg8-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+            margin : 0 auto;
+        }
+
+        .tmdimg8-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .tmdimg9{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .tmdimg9-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+            
+        }
+
+        .tmdimg9-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+            margin : 0 auto;
+        }
+
+        .tmdimg9-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .dmdimg1{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .dmdimg1-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .dmdimg1-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+            margin : 0 auto;
+        }
+
+        .dmdimg1-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .dmdimg2{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .dmdimg2-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .dmdimg2-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+            margin : 0 auto;
+        }
+
+        .dmdimg2-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .dmdimg3{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .dmdimg3-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .dmdimg3-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+            margin : 0 auto;
+        }
+
+        .dmdimg3-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .dmdimg4{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .dmdimg4-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .dmdimg4-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+           margin : 0 auto;
+        }
+
+        .dmdimg4-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .dmdimg5{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .dmdimg5-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .dmdimg5-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+           margin : 0 auto;
+        }
+
+        .dmdimg5-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .dmdimg6{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .dmdimg6-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .dmdimg6-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+           margin : 0 auto;
+        }
+
+        .dmdimg6-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .dmdimg7{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .dmdimg7-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .dmdimg7-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+           margin : 0 auto;
+        }
+
+        .dmdimg7-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .dmdimg8{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .dmdimg8-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .dmdimg8-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+           margin : 0 auto;
+        }
+
+        .dmdimg8-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+
+        .dmdimg9{
+            position: absolute;
+            top : 0;
+            bottom : 0;
+            left : 0;
+            right : 0;
+            width: 100%;
+            height : 100%;
+        }
+
+        .dmdimg9-box{
+            position: fixed;
+            margin: 0 auto;
+            top : 18%;
+            text-align: center;
+            width: 50%;
+            height:600px;
+            left : 24.5%;
+            background-color: white;
+            padding: 10px;
+            font-size : 30px;
+        }
+
+        .dmdimg9-box>img{
+            width: 50%;
+            height:450px;
+            float:left;
+           margin : 0 auto;
+        }
+
+        .dmdimg9-box>.about{
+            margin : 0 auto;
+            float:left;
+            overflow : right;
+            width : 50%;
+        }
+   
+     </style>
+
+</head>
+<body>
+    <div id = "wrap">
+        <div id = "header">
+            <div class = "logo">
+                <a href = "main.html"> <img src="LEEEE_F02.png" alt="My Image"></a>
+            </div>
+
+            <div class = "menu">
+                <div class = "menuBtn"><img src = "menulogo_black.png" alt = "logo"></div>
+
+                <div class = "sidebar">
+                    <img src = "LEEEE_F04.png" alt = "sidebarlogo">
+
+                    <ul class = "sidebar_list">
+                        <li>
+                            <a href="aboutme.html"><b>자기소개</b></a>
+                        </li>
+                        <li>
+                            <a href="DepartmentI.html"><b>학과소개</b></a>
+                        </li>
+                        <li>
+                            <a href="hobby.html"><b>취미 활동</b></a>
+                        </li>
+                        <li>
+                            <a href="travelmemories.html"><b>여행 추억속으로</b></a>
+                        </li>
+                        <li>
+                            <a href="travelplane.html"><b>여행 계획</b></span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class = "welcometext">
+                <br><br><br><h1>여행 추억속으로</h1>
+            </div>
+
+        </div>
+
+        <div id = "container">
+
+            <div class = "tongyoung">
+                <div class = "tabout">
+                    <h1>통영에서</h1>
+                    <p>2022.07.01 ~ 2022.07.02</p>
+                </div>
+                <div class = "tongimg">
+                    <div class = "tongyoungimg" id = "tongyoungimg1"><img src = "tongyoungimg1.jpeg" art = "tongyoungimg1"></div>
+                    <div class = "tongyoungimg" id = "tongyoungimg2"><img src = "tongyoungimg2.jpeg" art = "tongyoungimg2"></div>
+                    <div class = "tongyoungimg" id = "tongyoungimg3"><img src = "tongyoungimg3.jpeg" art = "tongyoungimg3"></div>
+                    <div class = "tongyoungimg" id = "tongyoungimg4"><img src = "tongyoungimg4.jpeg" art = "tongyoungimg4"></div>
+                    <div class = "tongyoungimg" id = "tongyoungimg5"><img src = "tongyoungimg5.jpeg" art = "tongyoungimg5"></div>
+                    <div class = "tongyoungimg" id = "tongyoungimg6"><img src = "tongyoungimg6.jpeg" art = "tongyoungimg6"></div>
+                    <div class = "tongyoungimg" id = "tongyoungimg7"><img src = "tongyoungimg7.jpg" art = "tongyoungimg7"></div>
+                    <div class = "tongyoungimg" id = "tongyoungimg8"><img src = "tongyoungimg8.jpg" art = "tongyoungimg8"></div>
+                    <div class = "tongyoungimg" id = "tongyoungimg9"><img src = "tongyoungimg9.jpg" art = "tongyoungimg9"></div>
+                </div>
+            </div>
+
+            <div class = "danyang">
+                <div class = "dabout">  
+                    <h1>단양에서</h1>
+                    <p>2022.10.14 ~ 2022.10.15</p>
+                </div>
+                <div class = "dimg">
+                    <div class = "danimg" id = "danimg1"><img src = "travelmemories.jpeg" art = "danimg1"></div>
+                    <div class = "danimg" id = "danimg2"><img src = "danimg2.jpeg" art = "danimg2"></div>
+                    <div class = "danimg" id = "danimg3"><img src = "danimg3.jpeg" art = "danimg3"></div>
+                    <div class = "danimg" id = "danimg4"><img src = "danimg4.jpeg" art = "danimg4"></div>
+                    <div class = "danimg" id = "danimg5"><img src = "danimg5.jpeg" art = "danimg5"></div>
+                    <div class = "danimg" id = "danimg6"><img src = "danimg6.jpg" art = "danimg6"></div>
+                    <div class = "danimg" id = "danimg7"><img src = "danimg7.jpeg" art = "danimg7"></div>
+                    <div class = "danimg" id = "danimg8"><img src = "danimg8.jpeg" art = "danimg8"></div>
+                    <div class = "danimg" id = "danimg9"><img src = "danimg9.jpeg" art = "danimg9"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tmdimg1">
+            <div class="modal-bg"></div>
+            <div class="tmdimg1-box">
+              <h1>
+                통영을 소개하는 이유
+              </h1>
+              
+              <img src = "tongyoungimg1.jpeg" art = "tongimg1">
+              <div class = "about"><p>군 복무로 인해 오랫동안 여행을 가지 못했는데
+                 긴 말년휴가를 받고 나와 편안한 마음으로 오랜만에 가족들과 여행을 갔다 온 추억이 행복했고, 남해안의 아름다운 풍경들을 느낄 수 있어서 소개를 드립니다.</p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="tmdimg2">
+            <div class="modal-bg"></div>
+            <div class="tmdimg2-box">
+              <h1>
+                숙소
+              </h1>
+              
+              <img src = "tongyoungimg2.jpeg" art = "tongimg2">
+              <div class = "about"><p>통영에 도착하자마자 숙소에 도착하였는데 창문으로 넓은 바다를 볼 수 있어서 좋았습니다.</p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="tmdimg3">
+            <div class="modal-bg"></div>
+            <div class="tmdimg3-box">
+              <h1>
+                동피랑 벽화 마을
+              </h1>
+              
+              <img src = "tongyoungimg3.jpeg" art = "tongimg3">
+              <div class = "about"><p>동피랑 벽화마을에 올라가서 벽화에 그려진 여러 가지 그림들을 감상할 수 있었고, 높이 올라가 통영항도 멋있게 볼 수 있어서 아름다웠습니다.</p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="tmdimg4">
+            <div class="modal-bg"></div>
+            <div class="tmdimg4-box">
+              <h1>
+                바비큐 파티
+              </h1>
+              
+              <img src = "tongyoungimg4.jpeg" art = "tongimg4">
+              <div class = "about"><p>숙소 1층에 위치한 바비큐장에서 고기들과 새우를 같이 구워 먹었습니다. 바다를 보며 식사하니 더욱더 맛있게 식사했습니다.</p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="tmdimg5">
+            <div class="modal-bg"></div>
+            <div class="tmdimg5-box">
+              <h1>
+                쥐치회
+              </h1>
+              
+              <img src = "tongyoungimg5.jpeg" art = "tongimg5">
+              <div class = "about">
+                <p>
+                    통영 중앙전통시장에 위치한 수산시장에서 쥐치회를 테이크아웃해서 숙소에서 먹었습니다.
+                     쥐치회를 처음으로 시식해 보았는데 깔끔하고 약간 단맛이 있으며 쫄깃하니 맛있게 먹었습니다. 
+                </p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="tmdimg6">
+            <div class="modal-bg"></div>
+            <div class="tmdimg6-box">
+              <h1>
+                야경
+              </h1>
+              
+              <img src = "tongyoungimg6.jpeg" art = "tongimg6">
+              <div class = "about">
+                <p>
+                    밤에 건너편 항구의 야경을 잠시 볼 수 있었는데 밝은 불빛들이 바다에 반사되어 멋있게 감상할 수 있었습니다.
+                </p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="tmdimg7">
+            <div class="modal-bg"></div>
+            <div class="tmdimg7-box">
+              <h1>
+                남해안
+              </h1>
+              
+              <img src = "tongyoungimg7.jpg" art = "tongimg7">
+              <div class = "about">
+                <p>
+                    숙소에서 아침에 일어나 조식을 먹은 뒤 넓게 보이는 아름다운 남해안을 볼 수 있었습니다.
+                </p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="tmdimg8">
+            <div class="modal-bg"></div>
+            <div class="tmdimg8-box">
+              <h1>
+                통영 케이블카
+              </h1>
+              
+              <img src = "tongyoungimg8.jpg" art = "tongimg8">
+              <div class = "about">
+                <p>
+                    통영 미륵산에 설치되어 있는 케이블카에 탑승을 해보았는데, 은근히 속도가 빠르게 올라갔고 넓은 창으로 통영을 한눈에 볼 수 있어서 좋았습니다. 그리고
+                미륵산 정상에 도착하면 아름다운 바다와 산을 감상할 수 있어서 좋았습니다.
+                </p>
+            </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="tmdimg9">
+            <div class="modal-bg"></div>
+            <div class="tmdimg9-box">
+              <h1>
+                삼도수군통제영
+              </h1>
+              
+              <img src = "tongyoungimg9.jpg" art = "tongimg9">
+              <div class = "about">
+                <p>
+                    삼도수군통제영 조선 후기 경상도, 전라도, 충청도 등 3도의 수군을
+                     통솔하는 해상 방어 총사령부의 터입니다. 이러한 문화재를 가까이서
+                      직접 보니 조선시대의 건물이 아름다움을 느낄 수 있었고 기왓장의 아름다움을 감상할 수 있었습니다.
+                </p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="dmdimg1">
+            <div class="modal-bg"></div>
+            <div class="dmdimg1-box">
+              <h1>
+                단양을 소개하는 이유
+              </h1>
+              
+              <img src = "travelmemories.jpeg" art = "danimg1">
+              <div class = "about">
+                <p>
+                    2022년 10월 14일 ~ 2022년 10월 15일 1박 2일간 가족들과 여행하였습니다.
+                     단양으로 여행 가기 전에는 항상 바닷가로 여행을 갔었지만, 처음으로 바닷가 지역이 아닌 곳의 다른 아름다운
+                      자연환경을 볼 수 있어서 좋았고 뜻깊은 여행지가 되었던 경험이 있어 소개를 드리고 싶습니다.
+
+
+                </p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="dmdimg2">
+            <div class="modal-bg"></div>
+            <div class="dmdimg2-box">
+              <h1>
+                대산 원조 마늘 순대
+              </h1>
+              
+              <img src = "danimg2.jpeg" art = "danimg2">
+              <div class = "about"><p>도착하자마자 방문한 곳은 단양 구경시장에 자리 잡고 있는
+                 '대산 원조 마늘 순대' 집을 방문하였습니다. 저는 마늘 순댓국을 주문해서 먹었는데, 순댓국
+                  특유의 잡내를 마늘로 잡은 느낌이 들어서 깔끔하고 맛있게 한 그릇을 뚝딱 비웠습니다.</p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="dmdimg3">
+            <div class="modal-bg"></div>
+            <div class="dmdimg3-box">
+              <h1>
+                도담상봉
+              </h1>
+              
+              <img src = "danimg3.jpeg" art = "danimg3">
+              <div class = "about">
+                <p>3개의 기암으로 이루어진 도담삼봉을 구경하였습니다. 이날 당시에 날씨가 너무 좋아 도담삼봉과 하늘이 잘 이루어져 감상하기 좋았습니다.</p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="dmdimg4">
+            <div class="modal-bg"></div>
+            <div class="dmdimg4-box">
+              <h1>
+                도담삼봉 유람선
+              </h1>
+              
+              <img src = "danimg4.jpeg" art = "danimg4">
+              <div class = "about">
+                <p>도담삼봉 유원지에 자리 잡고 있는 유람선에 탑승하여 도담삼봉-석문-은주암-자라바위-금귤-고수대교를 가까이서 감상할 수 있었습니다.</p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="dmdimg5">
+            <div class="modal-bg"></div>
+            <div class="dmdimg5-box">
+              <h1>
+                저녁식사
+              </h1>
+              
+              <img src = "danimg5.jpeg" art = "danimg5">
+              <div class = "about">
+                <p>구경시장에서 구매한 흙 마늘 닭강정과, 새우만두를 구매하고 고기들과 함께 바비큐 파티를 했습니다.</p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="dmdimg6">
+            <div class="modal-bg"></div>
+            <div class="dmdimg6-box">
+              <h1>
+                카페산
+              </h1>
+              
+              <img src = "danimg6.jpg" art = "danimg6">
+              <div class = "about">
+                <p>패러 글라이딩장 바로 옆에 위치한 카페인산에 방문하였습니다.
+                     높은 산 중턱에 위치한 고지이기 때문에 자동차로 가파르게 올라갔습니다. 높게 올라간 만큼 카페산에서 본 풍경은 아름다웠고,
+                      패러글라이딩을 타는 모습도 구경할 수 있었습니다.
+              </p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="dmdimg7">
+            <div class="modal-bg"></div>
+            <div class="dmdimg7-box">
+              <h1>
+                사인암
+              </h1>
+              
+              <img src = "danimg7.jpeg" art = "danimg7">
+              <div class = "about"><p>단양팔경의 명소로 유명한 사인암에 방문하여 아름다운 기암절벽을 볼 수 있었습니다.
+                 수평선과 수직으로 이루어져 체크무늬를 형상하게끔 생겨 신기하였습니다. 또한 이날에 물든 단풍나무들과 함께 볼 수 있어서 더 아름다웠던 거 같습니다.
+              </p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="dmdimg8">
+            <div class="modal-bg"></div>
+            <div class="dmdimg8-box">
+              <h1>고수동굴</h1>
+              
+              <img src = "danimg8.jpeg" art = "danimg8">
+              <div class = "about">
+                <p>천연기념물로 지정된 고수동굴에 방문하였습니다. 저는 고수동굴과 같이 깊은 동굴에 처음 가봤기에 무척 신기했고 동굴 안이 약간 추웠던 경험이었습니다.
+              </p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div class="dmdimg9">
+            <div class="modal-bg"></div>
+            <div class="dmdimg9-box">
+              <h1>
+                가연
+              </h1>
+              
+              <img src = "danimg9.jpeg" art = "danimg9">
+              <div class = "about"><p>단양의 맛집인 '가연'이라는 식당에서 마늘 떡갈비를 먹기 위해 방문했습니다. 웨이팅이 길었는데 한 시간 정도 테이블링 앱을 통해서 웨이팅을 했습니다.
+                 마늘에 대해 거부감이 없는 저는 기다린 만큼 맛있게 식사하였습니다. 육회와 육갈탕도 추가로 주문해서 먹었는데 육갈탕이 맛있었던 경험이 있습니다.
+              </p>
+                </div>
+              <button class="btn-close">닫기</button>
+            </div>
+        </div>
+
+        <div id = "footer">
+            <img src ="LEEEE_F04.png">
+            <h1><br>소프트웨어공학과 20200669 이승희</h1>
+        </div>
+
+    </div>
+
+    
+
+    
+</body>
+
+
+</html>

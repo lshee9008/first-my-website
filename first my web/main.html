@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mainpage</title>
+    <style>
+
+        body{
+            margin : 0;
+            
+        }
+
+        #wrap{
+            margin : 0px 0px;
+            height : 100%;
+            width : 100%;
+            position : relative;
+        }
+
+        #header{
+            margin: 0px 0px;
+            width: 100%;
+            height: 350px;
+            display: block;   
+        }
+
+        #container{
+            margin : 0 auto;
+            width: 60%;
+            height : 2000px;
+        }
+
+        .logo img{
+            width : 150px;
+            float : left;
+        }
+
+        .sidebar{
+            position: fixed;
+            right : 0;
+            transition: 1s;
+            width : 0;
+            height: 100%;
+            overflow: hidden;
+            background: black;
+            transition-duration: 1s;
+            top : 0px;
+            z-index:4;
+        }
+      
+        .menuBtn{
+            position : absolute;
+            right : 0;
+        }
+
+        .menuBtn >img{
+            width : 100px;
+        }
+
+        .menu:hover > .sidebar{
+            height : 100%;
+            width : 300px;
+            right : 100;
+            left : 100;
+            top: 0;
+        }
+
+        .sidebar > img{
+            width : 330px;
+           margin : 10px 10px;
+        }
+
+        .sidebar_list li{
+            list-style-type: none;
+            margin: 70px 0;
+            font-size: 30px;
+            text-align : center;
+        }
+
+        .sidebar_list li a{
+            text-decoration-line: none;
+            color : white;
+        }
+
+        .sidebar_list li a:hover{
+            text-decoration-line: none;
+            color : greenyellow;
+        }
+
+        .welcometext{
+            margin : auto; 
+            width : 60%;
+            height : 100%;
+        }
+
+        .welcometext > h1{  
+            font-size : 100px;
+        }
+
+        .pagelink{
+            position: absolute;
+            width : 60%;
+            margin : 0 auto;
+        }
+
+        .aboutme{
+            margin : 0 auto;
+            width : 49.5%;
+            height: auto;
+            float : left;
+        }
+
+        .aboutme a img{
+            margin : 0;
+            width : 100%;
+            height : auto;
+        }
+
+        .aboutme:hover{
+            opacity: 0.8;
+        }
+
+        .aboutme h2{   
+            text-align: center;
+            margin-top : 23%;
+            width : 49.5%;
+            position :absolute;
+            font-size: 35px;
+            color : black;
+            display: none;
+        }
+
+      
+        .aboutme:hover h2{
+            display:inline;
+        }
+
+        .departmentlink{ 
+            margin : 0 auto;
+            width : 49.5%;
+            height : auto;
+            float : right;
+        }
+
+        .departmentlink a img{
+            margin : 0;
+            width : 100%;
+            height : auto;
+        }        
+
+        .departmentlink:hover{
+            opacity: 0.8;
+        }
+
+        .departmentlink h2{
+            text-align: center;
+            margin-top : 23%;
+            width : 49.5%;
+            position :absolute;
+            font-size: 35px;
+            color : black;
+            display: none;
+        }
+
+        .departmentlink:hover h2{
+            display:inline;
+        }
+
+        .hobbylink{ 
+            margin : 0;
+            margin-top:1%;
+            width : 100%;
+            height : auto;
+            float : right;
+
+        }
+
+        .hobbylink a img{
+            margin : 0;
+            width : 100%;
+            height : 600px;
+        }        
+
+        .hobbylink:hover{
+            opacity: 0.8;
+        }
+
+        .hobbylink h2{
+            text-align: center;
+            margin-top : 23%;
+            width : 100%;
+            position :absolute;
+            font-size: 35px;
+            color : black;
+            display: none;
+        }
+
+        .hobbylink:hover h2{
+            display:inline;
+        }
+
+        .travelm{
+            margin : 0 auto;
+            margin-top: 1%;
+            width : 49.5%;
+            height: auto;
+            float : left;
+        }
+
+        .travelm a img{
+            margin : 0;
+            width : 100%;
+            height : auto;
+        }
+
+        .travelm:hover{
+            opacity: 0.8;
+        }
+
+        .travelm h2{
+            text-align: center;
+            margin-top : 23%;
+            width : 49.5%;
+            position :absolute;
+            font-size: 35px;
+            color : black;
+            display: none;
+        }
+
+        .travelm:hover h2{
+            display:inline;
+        }
+
+        .travelp{ 
+            margin : 0 auto;
+            margin-top: 1%;
+            width : 49.5%;
+            height: auto;
+            float : right;
+        }
+
+        .travelp a img{
+            margin : 0;
+            width : 100%;
+            height : auto;
+        }        
+
+        .travelp:hover{
+            opacity: 0.8;
+        }
+
+        .travelp h2{
+            text-align: center;
+            margin-top : 23%;
+            width : 49.5%;
+            position :absolute;
+            font-size: 35px;
+            color : black;
+            display: none;
+        }
+
+        .travelp:hover h2{
+            display:inline;
+        }
+
+        #footer {
+            position:absolute;
+            
+            top : 120%;
+            width:100%;
+            height:150px;   
+            background:black;
+            color : white;            
+        }
+
+        #footer img{
+            float : left;
+            width : 230px;
+            height: auto;
+        }
+
+     </style>
+
+</head>
+<body>
+    <div id = "wrap">
+        <div id = "header">
+            <div class = "logo">
+                <a href = "main.html"> <img src="LEEEE_F02.png" alt="My Image"></a>
+            </div>
+
+
+            <div class = "menu">
+                <div class = "menuBtn">
+                    <img src = "menulogo_black.png" alt = "logo">
+                </div>
+
+                <div class = "sidebar">
+                    <img src = "LEEEE_F04.png" alt = "sidebarlogo">
+
+                    <ul class = "sidebar_list">
+                        <li>
+                            <a href="aboutme.html"><b>자기소개</b></a>
+                        </li>
+                        <li>
+                            <a href="DepartmentI.html"><b>학과소개</b></a>
+                        </li>
+                        <li>
+                            <a href="hobby.html"><b>취미 활동</b></a>
+                        </li>
+                        <li>
+                            <a href="travelmemories.html"><b>여행 추억속으로</b></a>
+                        </li>
+                        <li>
+                            <a href="travelplane.html"><b>여행 계획</b></span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class = "welcometext">
+                <br><br><br><h1>환영합니다.</h1>
+            </div>
+
+        </div>
+
+        <div id = "container">
+            
+            
+
+            <div class = "pagelink">
+                <div class = "aboutme">
+                    <a href = "aboutme.html">
+                        <h2>자기소개 페이지 바로가기</h2>
+                        <img src = "aboutme.JPG" alt = "자기소개 사진입니다.">
+                    </a>         
+                    
+                </div>
+
+                <div class = "departmentlink">
+                    <a href = "DepartmentI.html">
+                        <h2>학과 소개 바로가기</h2>
+                        <img src = "software.jpg" alt = "소프트웨어공학 사진입니다.">
+                    </a>         
+                    
+                </div>
+
+                <div class = "hobbylink">
+                    <a href = "hobby.html">
+                        <h2>취미활동 바로가기</h2>
+                        <img src = "hobby.jpeg" alt = "취미활동 사진입니다.">
+                    </a>         
+                    
+                </div>
+
+                <div class = "travelm">
+                    <a href = "travelmemories.html">
+                        <h2>여행 추억 바로가기</h2>
+                        <img src = "travelmemories.jpeg" alt = "여행추억 사진입니다.">
+                    </a>         
+                    
+                </div>
+
+                <div class = "travelp">
+                    <a href = "travelplane.html">
+                        <h2>여행 계획 바로가기</h2>
+                        <img src = "travelplane.jpeg" alt = "여행계획 사진입니다.">
+                    </a>         
+                    
+                </div>
+
+                
+            </div>
+            
+
+        </div>
+
+        <div id = "footer">
+             <img src ="LEEEE_F04.png">
+             <h1><br>소프트웨어공학과 20200669 이승희</h1>
+        </div>
+
+
+
+        
+        
+
+    </div>
+
+    
+</body>
+
+
+</html>
